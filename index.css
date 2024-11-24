@@ -1,0 +1,154 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.home-container {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 100px;
+}
+
+.animated-header {
+  font-size: 2.5rem;
+  -webkit-animation: fadeInDown 1s ease-in-out;
+  animation: fadeInDown 1s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.animated-text {
+  font-size: 1.2rem;
+  -webkit-animation: fadeInUp 1.5s ease-in-out;
+  animation: fadeInUp 1.5s ease-in-out;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.features-section h2,
+.steps-section h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Steps Section */
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+.step h4 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animations */
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

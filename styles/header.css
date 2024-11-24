@@ -1,0 +1,32 @@
+.header {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li .fa-icon {
+  margin-right: 8px;
+}
+
+nav ul li:hover {
+  opacity: 0.8;
+}
